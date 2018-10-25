@@ -42,14 +42,6 @@
 * Gists must have at least one revision and can have many revisions
 * A revision belongs to one gist
 
-### revisions <=> line_changes
-* Revisions can have many line changes
-* Line changes belong to one revision
-
-### files <=> line_changes
-* Files can have many line changes
-* line changes belong to one file
-
 ### gists <=> comments
 * Gist can have many comments
 * A comment belongs to one gist
@@ -85,18 +77,8 @@
 ### revisions
 * gist_id*
 * type {created, renamed, revised}*
-* old_filename (used only when renaming)
-* new_filename (used only when renaming)
+* file_snapshots_url*
 * created_at*
-
-### line_changes
-* revision_id*
-* file_id*
-* line_num*
-* type {addition, deletion}*
-* content
-* created_at
-* updated_at
 
 ### comments
 * gist_id
@@ -112,4 +94,4 @@
 * Revisions are immutable
 * Line changes are immutable
 * If gist is secret, hide gist from search engines
-* When user deletes file from gist, relationship between gist and file is removed, but file record is not deleted
+* When editing a gist, file snapshots of all files associated with gist must be taken, zipped, and stored somewhere
