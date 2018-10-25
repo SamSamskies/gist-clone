@@ -30,40 +30,40 @@
 * Comments
 
 ## Relationships
-### Users <=> Gists
+### users <=> gists
 * Users can have many gists
 * A gist belongs to one user
 
-### Gists <=> Files
+### gists <=> files
 * Gists must have at least one file and can have many files
 * A file belongs to one gist
 
-### Gists <=> Revisions
+### gists <=> revisions
 * Gists must have at least one revision and can have many revisions
 * A revision belongs to one gist
 
-### Revisions <=> Line Changes
+### revisions <=> line_changes
 * Revisions can have many line changes
 * Line changes belong to one revision
 
-### Files <=> Line Changes
+### files <=> line_changes
 * Files can have many line changes
 * line changes belong to one file
 
-### Gists <=> Comments
+### gists <=> comments
 * Gist can have many comments
 * A comment belongs to one gist
 
 
 ## Attributes
-### Users
+### users
 * username*
 * password* 
 * email*
 * created_at*
 * updated_at*
 
-### Gists
+### gists
 * user_id*
 * forked_from_gist_id 
 * description
@@ -72,7 +72,7 @@
 * created at*
 * updated at*
 
-### Files
+### files
 * gist_id
 * name*
 * indent_mode {tabs, spaces} (default spaces)
@@ -82,14 +82,14 @@
 * created_at*
 * updated_at*
 
-### Revisions
+### revisions
 * gist_id*
 * type {created, renamed, revised}*
 * old_filename (used only when renaming)
 * new_filename (used only when renaming)
 * created_at*
 
-### Line Changes
+### line_changes
 * revision_id*
 * file_id*
 * line_num*
@@ -98,7 +98,7 @@
 * created_at
 * updated_at
 
-### Comments
+### comments
 * gist_id
 * content
 * created_at
