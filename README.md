@@ -90,5 +90,5 @@
 * Revisions are immutable
 * Files are immutable
 * If gist is secret, hide gist from search engines
-* Revision type "renamed" is only change is renaming one file
-* If more than one change made including just renaming multiple files, that considered a Revision with type "revised"
+* Revision type "renamed" user if only change is renaming one file
+* If more than one change made including just renaming multiple files, that is considered a Revision with type "revised"
