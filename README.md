@@ -24,10 +24,10 @@
 ## Entities
 * Users
 * Gists
-* Files
-* Revisions
-* Changes
 * Comments
+* Revisions
+* Files
+
 
 ## Relationships
 ### users <=> gists
