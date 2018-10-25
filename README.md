@@ -72,7 +72,6 @@
 
 ### revisions
 * gist_id*
-* type {created, renamed, revised}*
 * created_at*
 
 ### files
@@ -89,5 +88,3 @@
 * Revisions are immutable
 * Files are immutable
 * If gist is secret, hide gist from search engines
-* Revision type "renamed" used if only change is renaming one file
-* If more than one change made including just renaming multiple files, that is considered a Revision with type "revised"
