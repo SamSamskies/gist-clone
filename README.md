@@ -10,7 +10,6 @@
 - [ ] edit gist
 - [ ] delete gist
 - [ ] star gist
-- [ ] fork gist
 - [ ] download gist
 - [ ] view summaries of all gists
 - [ ] view summaries of all forked gists
@@ -49,7 +48,6 @@
 
 ### gists
 * user_id*
-* forked_from_gist_id 
 * description
 * num_stars (default 0)
 * is_secret (default false)
@@ -70,7 +68,6 @@
 ## Invariants
 * Must have an account to create a gist
 * Gist must always have at least one revision
-* Can't fork own gists
 * Revisions are immutable
 * Files are immutable
 * If gist is secret, hide gist from search engines
