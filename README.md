@@ -22,6 +22,7 @@
 * Gists
 * Revisions
 * Files
+* Diffs
 
 
 ## Relationships
@@ -36,6 +37,10 @@
 ### revisions <=> files
 * Revisions must have at least one file and can have many files
 * A file belongs to one revision
+
+### files <=> diffs
+* Files can have one diff
+* A diff belongs to one file
 
 
 ## Attributes
@@ -59,10 +64,14 @@
 * created_at*
 
 ### files
-* revision_id
+* revision_id*
 * name*
 * content*
 * created_at*
+
+### diffs
+* file_id*
+* content
 
 
 ## Invariants
@@ -70,4 +79,5 @@
 * Gist must always have at least one revision
 * Revisions are immutable
 * Files are immutable
+* Diffs are immutable
 * If gist is secret, hide gist from search engines
