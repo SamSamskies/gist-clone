@@ -12,9 +12,6 @@
 - [ ] star gist
 - [ ] fork gist
 - [ ] download gist
-- [ ] comment on gist
-- [ ] edit comment
-- [ ] delete comment
 - [ ] view summaries of all gists
 - [ ] view summaries of all forked gists
 - [ ] view all starred gists
@@ -24,7 +21,6 @@
 ## Entities
 * Users
 * Gists
-* Comments
 * Revisions
 * Files
 
@@ -33,10 +29,6 @@
 ### users <=> gists
 * Users can have many gists
 * A gist belongs to one user
-
-### gists <=> comments
-* Gist can have many comments
-* A comment belongs to one gist
 
 ### gists <=> revisions
 * Gists must have at least one revision and can have many revisions
@@ -63,12 +55,6 @@
 * is_secret (default false)
 * created at*
 * updated at*
-
-### comments
-* gist_id
-* content
-* created_at
-* updated_at
 
 ### revisions
 * gist_id*
