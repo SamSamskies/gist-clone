@@ -1,3 +1,5 @@
+DISCLAIMER: If you are looking at this repo for some reason, I do not recommend using Sequelize like I did. I just wanted to try it out. I'd recommend using Knex instead.
+
 # User stories
 - [ ] signup
 - [ ] login
